@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.center {
+  font-family: Helvetica, Arial, sans-serif;
+  position: absolute;
+  border: 2px solid;
+  margin: auto;
+  width: 30%;
+  padding: 10px;
+  top: 25%;
+  left: 37%;
+  border-radius: 20px;
+  border-color: rgb(38, 1, 20);
+  background-color: rgba(38, 1, 20, 0.469);
+}
+
+.body{
+  margin: 1%;
+}
+
+.DATA{
+  padding-bottom: 0.5%;
+}
+
+.DIAS{
+  padding: 0.5%;
+}
+
+.HORAS{
+  padding: 0.5%;
+}
+
+.MINUTOS{
+  padding: 0.5%;
+}
+
+.SEGUNDOS{
+  padding: 0.5%;
+}
+
+.data_casamento{
+  color: rgb(89, 140, 13);
+}
+
+.horas_casamento{
+  color: rgba(89, 140, 13, 200%);
+}
+
+.minutos_casamento{
+  color: rgba(89, 140, 13, 200%);
+}
+
+.segundos_casamento{
+  color: rgba(89, 140, 13, 200%);
+}
