@@ -40,8 +40,8 @@ const Index = () => {
 
 
   return (
-    <div class="center">
-      <div class="body">
+    <div className="center">
+      <div className="body">
         <p className="DATA">Desde o dia <b className="data_casamento">{startDate.toLocaleDateString()}</b></p>
         <p className="DIAS">Vivemos <b className="horas_casamento">{timeElapsed.totalDays}</b> "bom dia amor"</p>
         <p className="HORAS"><b className="horas_casamento">{timeElapsed.totalHours}</b> momentos juntos</p>
